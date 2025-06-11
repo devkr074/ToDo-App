@@ -1,9 +1,7 @@
 package com.app.todo.service;
 
 import java.util.List;
-
 import org.springframework.stereotype.Service;
-
 import com.app.todo.model.Task;
 import com.app.todo.repository.TaskRepository;
 
@@ -36,5 +34,4 @@ public class TaskService {
         task.setCompleted(!task.isCompleted());
         taskRepository.save(task);
     }
-
 }
